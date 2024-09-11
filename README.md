@@ -69,6 +69,11 @@ Ensure your development environment meets the following requirements:
     OPENAI_API_KEY=your_openai_api_key_here
     FIRECRAWL_API_KEY=your_firecrawl_api_key_here
     ```
+To obtain these essential API keys:
+
+For OpenAI: Visit OpenAI's website, create an account, and generate an API key.
+For Firecrawl: Navigate to Firecrawl's platform, sign up for an account, and obtain your API key.
+Ensure that these keys are kept confidential and never shared publicly or committed to version control.
 
 3. Modify the agent configurations and tasks in the `config/agents.yaml` and `config/tasks.yaml` files to suit your needs.
 
@@ -100,3 +105,6 @@ crewAI-Boilerplate/
 ├── pyproject.toml
 └── README.md
 ```
+
+
+For more information on how to use crewAI framework you can visit their [documentation](https://docs.crewai.com/).
