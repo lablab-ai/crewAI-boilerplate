@@ -1,6 +1,5 @@
 # crewAI Boilerplate
 
-**License:** MIT  
 **Python Version:** 3.10+  
 **Package Manager:** Poetry
 
