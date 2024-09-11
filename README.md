@@ -96,12 +96,17 @@ crewAI-Boilerplate/
 │       │   ├── agents.yaml    # Defines AI agent configurations
 │       │   └── tasks.yaml     # Specifies tasks for AI agents
 │       ├── tools/
-│       ├── crew.py
+│       │   ├── summarizer_tool.py    # Text summarization utility
+│       │   └── custom_tool.py        # Extensible custom functionality
+│       │   └── api_fetch.py           # Dummy API fetching tool
+│       │   └── __init__.py
+│       ├── __init__.py
 │       └── main.py
-├── tests/
-├── docs/
+│       └── crew.py
 ├── .env.example
 ├── .gitignore
+├── blogp_post.md
+├── new-logs.txt
 ├── pyproject.toml
 └── README.md
 ```
