@@ -71,8 +71,8 @@ Ensure your development environment meets the following requirements:
     ```
 To obtain these essential API keys:
 
-For OpenAI: Visit OpenAI's website, create an account, and generate an API key.
-For Firecrawl: Navigate to Firecrawl's platform, sign up for an account, and obtain your API key.
+For OpenAI: Visit [OpenAI's website](https://platform.openai.com/docs/overview), create an account, and generate an API key.
+For Firecrawl: Navigate to [Firecrawl's platform](https://www.firecrawl.dev/), sign up for an account, and obtain your API key.
 Ensure that these keys are kept confidential and never shared publicly or committed to version control.
 
 3. Modify the agent configurations and tasks in the `config/agents.yaml` and `config/tasks.yaml` files to suit your needs.
@@ -82,7 +82,7 @@ Ensure that these keys are kept confidential and never shared publicly or commit
 Run the following command to initialize the framework:
 
 ```bash
-poetry run crew-ai
+ poetry run crew-ai-boilerplate
 ```
 
 This will launch the default setup, which includes content creation. To customize agents or tasks, edit the configuration files and re-run the command. You can extend this boilerplate to suit a variety of AI-driven workflows.

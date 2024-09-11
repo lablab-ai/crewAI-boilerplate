@@ -1,0 +1,78 @@
+# tasks.yaml
+# This file defines the tasks for the BlogAgentBoiler framework.
+# Each task is assigned to a specific agent and describes what that agent is expected to do.
+# You can extend or customize this file to suit your workflow needs.
+
+# Research Task
+research_task:
+  description: |
+    The research task involves using the FirecrawlScrapeWebsiteTool to analyze content 
+    from the provided URL. Extract key information, identify main themes, gather relevant 
+    statistics, and uncover unique insights. Focus on understanding current trends, 
+    expert opinions, and debated points.
+    
+  expected_output: |
+    A comprehensive research report that includes:
+    1. Executive summary of key findings
+    2. Main themes and topics identified
+    3. Important statistics and data points
+    4. Expert opinions and quotes (if available)
+    5. Current trends and future predictions
+    6. List of credible sources for fact-checking
+    7. Potential areas for further exploration
+  
+  agent: researcher
+
+# Planning Task
+planning_task:
+  description: |
+    Based on the research report, the planner agent will create a detailed, 
+    SEO-optimized content outline for the blog post. The outline should include 
+    relevant keywords, address the target audience's needs, and provide a logical flow of information.
+    
+  expected_output: |
+    A well-structured blog post outline, including:
+    1. Proposed title and meta description
+    2. Introduction with a hook and thesis statement
+    3. Main sections and subsections with clear H2, H3 headings
+    4. Key points to cover under each section
+    5. Suggestions for internal and external links
+    6. Ideas for visual content (images, infographics, etc.)
+    7. Call-to-action (CTA) ideas for the conclusion
+    
+  agent: planner
+
+# Writing Task
+writing_task:
+  description: |
+    Using the SEO-optimized outline, the writer agent will craft a first draft 
+    of the blog post. The draft should be engaging, informative, and optimized for search engines.
+    
+  expected_output: |
+    A complete blog post draft in markdown format that includes:
+    1. An attention-grabbing introduction
+    2. Well-developed body paragraphs with proper use of headings (H2, H3)
+    3. Relevant statistics and expert quotes incorporated
+    4. SEO-optimized without keyword stuffing
+    5. Engaging conclusion with a call-to-action
+    6. Suggestions for relevant internal/external links and media
+    
+  agent: writer
+
+# Editing Task
+editing_task:
+  description: |
+    The editor agent will refine the blog post, focusing on factual accuracy, 
+    grammar, SEO optimization, and adherence to the brand's style guide. The goal is to produce 
+    a publication-ready article.
+    
+  expected_output: |
+    A polished blog post with:
+    1. Enhanced clarity and improved sentence structure
+    2. Proper use of SEO elements (title, meta description, headers, etc.)
+    3. Fact-checked information and proper citations
+    4. Comments explaining significant changes (if applicable)
+    5. Recommendations for additional internal/external links
+    6. Final proofread for grammar, spelling, and punctuation
+    
+  agent: editor

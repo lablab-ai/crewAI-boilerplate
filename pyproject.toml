@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "crew_ai_boilerplate"
+version = "0.1.0"
+description = "BlogAgentBoiler using crewAI"
+authors = ["Your Name <you@example.com>"]
+packages = [
+    { include = "crew_ai", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.51.0" }
+nltk = "^3.9.1"
+firecrawl = "^0.0.20"
+pyyaml = "^6.0"
+
+[tool.poetry.scripts]
+crew-ai-boilerplate = "crew_ai.main:run"
+run_crew = "crew_ai.main:run"
+train = "crew_ai.main:train"
+replay = "crew_ai.main:replay"
+test = "crew_ai.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
